@@ -1,0 +1,14 @@
+<div style="text-align: center;">
+    <div style="font-weight: 600; font-size: 32px; line-height: 36px; padding-bottom: 16px;">
+        {{ 'email.one_time_code.content.header'|trans({}, 'email', language) }}
+    </div>
+    <div style="font-weight: 400; font-size: 17px; line-height: 22px; padding-bottom: 24px; color: #6c6b6f;">
+        {{ 'email.one_time_code.content.description'|trans({}, 'email', language) }}
+    </div>
+    <div style="font-weight: 600; font-size: 32px; line-height: 36px;padding-bottom: 24px;">
+        {{ oneTimeCode }}
+    </div>
+    <div style="font-weight: 400; font-size: 14px; line-height: 20px; color: #6c6b6f;">
+        {{ 'email.one_time_code.content.details'|trans({}, 'email', language) }}
+    </div>
+</div>

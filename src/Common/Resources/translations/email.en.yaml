@@ -1,0 +1,7 @@
+email:
+  one_time_code:
+    subject: "Your code's here: Confirm your email for Travel Agency Hub!"
+    content:
+      header: "We need to verify your email"
+      description: "To keep your account secure, here's your one-time verification code."
+      details: "This code is valid for 30 minutes. Please do not share this with anyone."
