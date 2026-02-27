@@ -1,0 +1,7 @@
+email:
+  one_time_code:
+    subject: "Dein Code ist da: Bestätige deine E-Mail für Travel Agency Hub!"
+    content:
+      header: "Bitte bestätige deine E-Mail-Adresse"
+      description: "Damit dein Konto geschützt bleibt, hier dein einmaliger Bestätigungscode."
+      details: "Dieser Code ist 30 Minuten gültig. Teile ihn bitte mit niemandem."

@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  App\Common\:
+    resource: '../../*'
+    exclude:
+      - '../../Tests/'
+      - '../../Resources/'
+
+  App\Common\Infrastructure\Service\Email\EmailDefinition\YamlEmailDefinitionRepository:
+    arguments:
+      $yamlPath: '%kernel.project_dir%/src/Common/Resources/config/data/emails_definitions.yaml'

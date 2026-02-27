@@ -1,0 +1,32 @@
+# Email Definitions Configuration
+#
+# Structure:
+#
+# email_key:
+#     languages: ['en', 'de'] # (optional) List of supported languages, if not provided, it is not checked
+#     subject: 'trans://domain::translation.key # (required) subject: string or uri
+#     body: 'twig://path/to/template.{lang}.html.twig' # (required) body: string or uri
+#     parameters: ['param1', 'param2'] # (optional) List of required parameters for the email, used for validation
+#                                      # parameters are enriched with 'language' parameter automatically
+#
+# Available URIs handlers:
+#
+# Translation:
+# - trans://domain::translation.key
+# - trans://translation.key
+#
+# Twig Template:
+# - twig://path/to/template.{lang}.html.twig # use {lang} placeholder for language-specific templates
+# - twig://@Bundle/path/to/{lang}/template.html.twig
+# - twig://path/to/template.html.twig
+#
+# Plain Text:
+# - Just provide the plain text directly without any URI prefix
+#
+
+one_time_code:
+    languages: ['de', 'en']
+    subject: 'trans://email::email.one_time_code.subject'
+    body: 'twig://@Common/email/one_time_code.html.twig'
+    parameters: ['oneTimeCode', 'language']
+    

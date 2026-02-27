@@ -1,0 +1,19 @@
+parameters:
+
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  App\Offer\:
+    resource: '../../'
+    exclude:
+      - '../../Tests/'
+      - '../../Resources/'
+
+  App\Offer\Core\Service\OfferClientInterface:
+    class: App\Offer\Infrastructure\Client\HtgOfferClient
+
+  App\Contract\Offer\OfferClient\OfferClientInterface:
+    class: App\Offer\Interface\Adapter\OfferClientAdapter
